@@ -26,7 +26,7 @@ We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at 
 
 ## content
 
-My idea for this seminar is that there are several math graduate students already doing fluids or elasticity research.  Broader knowledge, with some kind of **focus on the mathematical structures underlying continuum problems**, and on **finite element formulation of the equations**, is helpful to all of us.
+My idea for this seminar is that there are several math graduate students already doing fluids or elasticity research.  Broader knowledge, with some kind of **focus on the mathematical structures underlying continuum problems**, and on **finite element/volume formulation of the equations**, is helpful to all of us.
 
 Also, it is now pretty easy to do numerical simulations of fluids and solids using the finite element method, especially using [Firedrake](https://www.firedrakeproject.org/index.html).  That open source Python-based library was the subject of last year's [finite element seminar](https://bueler.github.io/fe-seminar/), so we have examples to work from.
 
