@@ -26,9 +26,13 @@ We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at 
 
 ## content
 
-My idea for this seminar is that there are several math graduate students already doing fluids or elasticity research, and that broader knowledge is helpful.  This applies to me (Ed) as well.  Furthermore, it is now pretty easy to do numerical simulations of fluids and solids using the finite element method, especially using [Firedrake](https://www.firedrakeproject.org/index.html), the open source Python-based tool for last year's [finite element seminar](https://bueler.github.io/fe-seminar/).
+My idea for this seminar is that there are several math graduate students already doing fluids or elasticity research.  Broader knowledge, with some kind of **focus on the mathematical structures underlying continuum problems**, and on **finite element formulation of the equations**, is helpful to all of us.
 
-I'm happy to try to start the seminar with some kind of continuum mechanics introduction.  However, general continuum mechanics quickly gets ... boring?  In any case, there are many on campus who are expert in various fluids/solids problems, and they are all invited.  As well as anyone who is just curious.  Ideally the experts can start presenting their particular models from a (roughly) continuum mechanics starting point.
+Also, it is now pretty easy to do numerical simulations of fluids and solids using the finite element method, especially using [Firedrake](https://www.firedrakeproject.org/index.html).  That open source Python-based library was the subject of last year's [finite element seminar](https://bueler.github.io/fe-seminar/), so we have examples to work from.
+
+I figure I might start the seminar with some kind of continuum mechanics introduction.  However, general continuum mechanics quickly gets ... boring?  In any case, there are many on campus who are expert in various specific fluids/solids problems, and **they are all invited**.  Anyone who is just curious is also invited.  Ideally the experts can start their presentations from a somewhat-common starting point, before getting to their particular models.
+
+Tsunamis, linear elasticity, seismology, vulcanology, magneto-hydrodynamics, and water balloons are all in scope.
 
 ## <a id="schedule"></a> topics (schedule)
 
