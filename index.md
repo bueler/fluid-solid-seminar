@@ -24,7 +24,9 @@ We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at 
 
 ## content
 
-FIXME
+My idea for this seminar is that there are several math graduate students already doing fluids or elasticity research, and that broader knowledge is helpful.  This applies to me (Ed) as well.  Furthermore, it is now pretty easy to do numerical simulations of fluids and solids using the finite element method, especially using [Firedrake](https://www.firedrakeproject.org/index.html), the open source Python-based tool for last year's [finite element seminar](https://bueler.github.io/fe-seminar/).
+
+I'm happy to try to start the seminar with some kind of continuum mechanics introduction.  However, general continuum mechanics quickly gets ... boring?  In any case, there are many on campus who are expert in various fluids/solids problems, and they are all invited.  As well as anyone who is just curious.  Ideally the experts can start presenting their particular models from a (roughly) continuum mechanics starting point.
 
 ## <a id="schedule"></a> topics (schedule)
 
