@@ -1,56 +1,33 @@
 ---
-title: Finite element seminar
+title: "'Fluids and solids: mathematics and numerics' seminar"
 ---
 
-Welcome to **Math 692 Graduate Seminar: Finite Elements** in Spring 2024!  We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at the [University of Alaska Fairbanks](http://www.uaf.edu/).
+This will be the website for **Math 692 Graduate Seminar: Fluids: Mathematics and Numerics** in Spring 2025!  Here I revised the title so elastic solids are in scope too.
+
+We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at the [University of Alaska Fairbanks](http://www.uaf.edu/).
 
 * Course details:
   * Organizer/Instructor: [Ed Bueler](http://bueler.github.io/), [elbueler@alaska.edu](mailto:elbueler@alaska.edu).
-  * Time and place: Thursdays 3:30-4:30pm, Chapman 206.  Please email me for the Zoom link.  In-person is preferred if you are on campus!
-  * Credits (CRN 35370): 1.0, but **non-credit attendance is welcomed**.
+  * Time and place: _probably_ Thursdays 3:30-4:30pm, Chapman XXX (to be determined).
+  * In-person is preferred if you are on campus!  I will set up Zoom only if it makes sense.
+  * Credits (CRN YYYYY): 1.0, but **non-credit attendance is welcomed/encouraged**.
 
-* [Firedrake installation advice.](installation)
+* The Github repo for this website is at [https://github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).
 
-* The [Github repo for this website](https://github.com/bueler/fe-seminar) has example codes in the `py/` directory.
-
-* [A schedule of topics is at the bottom.](#schedule)  This schedule is subject to change!
+* [A schedule of topics will appear at the bottom.](#schedule)  This schedule is subject to change!
 
 ## guiding principles
 
 1. show up
-2. try stuff
+2. talk about fluids and solids and stuff
+3. try running stuff that does stuff
 
 ## content
 
-My plan is to take the lead on this seminar, and do lectures at the start.  Then to lead workshop style, encouraging student presentations, as much as possible.
-
-We will cover the practical finite element method, through actual computations using [Firedrake](https://www.firedrakeproject.org/).  I plan to mix in enough theory to make the code make sense.  The goal is definitely _not_ to prove systematically that the finite element method converges for certain problems.
-
-An introductory [partial differential equation](https://en.wikipedia.org/wiki/Partial_differential_equation) problem is (of course) the [Poisson equation](https://en.wikipedia.org/wiki/Poisson%27s_equation).  Then we can look at
-  * time-dependent problems like the [heat equation](https://en.wikipedia.org/wiki/Heat_equation),
-  * [advection-diffusion equations](https://en.wikipedia.org/wiki/Convection%E2%80%93diffusion_equation),
-  * vector problems including the [Stokes equations for fluids](https://en.wikipedia.org/wiki/Stokes_flow),
-  * nonlinear problems like the [Liouville-Bratu equation](https://en.wikipedia.org/wiki/Liouville%E2%80%93Bratu%E2%80%93Gelfand_equation),
-  * inequality-constrained problems like the [obstacle problem](https://en.wikipedia.org/wiki/Obstacle_problem),
-and any other models of interest to the participants.
+FIXME
 
 ## <a id="schedule"></a> topics (schedule)
 
 | Date   | Topic | Slides | Code in repo |
 |--------|-------|--------|--------------|
-| 18 Jan | laptop day: install Firedrake, start Poisson | [slides](slides/18jan.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/18jan)
-| 25 Jan | Poisson equation examples, Paraview | [slide](py/25jan/poisson.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/25jan)
-|  1 Feb | verification, assembly, errors | [slides](slides/1feb.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/1feb)
-|  8 Feb | meshes & elements: Gmsh, P_k, Neumann | [slides](slides/8feb.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/8feb)
-| 15 Feb | Stokes equations for glaciers | [slides (ext)](https://github.com/bueler/stokes-ice-tutorial/blob/main/slides.pdf) | [code (ext)](https://github.com/bueler/stokes-ice-tutorial)
-| 22 Feb | CANCELLED |
-| 29 Feb | time-stepping | [slides](slides/29feb.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/29feb)
-|  7 Mar | fast solvers for Poisson | [slides](slides/7mar.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/7mar)
-| 14 Mar | _Spring Break_ |
-| 21 Mar | nonlinear problems and systems | [slides](slides/21mar-bratu.pdf) <br> [slides](slides/21mar-plate.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/21mar)
-| 28 Mar | Stefano Fochesatto: obstacle problem | [slides](slides/28mar-sfochesatto.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/28mar)
-|  4 Apr | conservation and DG | [slides](slides/4apr.pdf) <br> [FE table](http://z.umn.edu/femtable) | [code](https://github.com/bueler/fe-seminar/tree/main/py/4apr)
-| 11 Apr | Tara Shreve: porous media | [slides (ext)](https://github.com/bueler/porous-drake/blob/main/slides/V00_Shreve_04112024_FE.pdf) | [code (ext)](https://github.com/bueler/porous-drake)
-| 18 Apr | Michael Christoffersen: linear elasticity | [slides](slides/18apr-mchristoffersen.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/18apr)
-| 25 Apr | Austin Smith: waves | [slides](slides/25apr-asmith.pdf) | [code](https://github.com/bueler/fe-seminar/tree/main/py/25apr)
-
+| 16 Jan | something | [FIXME](slides/16jan.pdf) | maybe
