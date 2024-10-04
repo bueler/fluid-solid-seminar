@@ -32,7 +32,7 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 
 I figure I might start the seminar with some kind of continuum mechanics introduction.  However, general continuum mechanics quickly gets ... boring?  In any case, there are many on campus who are expert in various specific fluids/solids problems, and **they are all invited**.  Anyone who is just curious is also invited.  Ideally the experts can start their presentations from a somewhat-common starting point, before getting to their particular models.
 
-Tsunamis, linear elasticity, seismology, vulcanology, magneto-hydrodynamics, and water balloons are all in scope.
+Tsunamis, linear elasticity, seismology, vulcanology, glaciers, magneto-hydrodynamics, and water balloons are all in scope.
 
 ## <a id="schedule"></a> topics (schedule)
 
