@@ -14,7 +14,7 @@ We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at 
   * In-person is preferred if you are on campus!  I will set up Zoom only if it makes sense.
   * Credits (CRN YYYYY): 1.0, but **non-credit attendance is welcomed/encouraged**.
 
-* The Github repo for this website is at [https://github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).
+* The Github repo for this website is at [github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).
 
 * [A schedule of topics will appear at the bottom.](#schedule)  This schedule is subject to change!
 
