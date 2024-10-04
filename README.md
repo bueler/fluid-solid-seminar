@@ -1,7 +1,8 @@
-# fe-seminar
+# fluid-solid-seminar
 
-A introductory finite element seminar using Firedrake: UAF Math 692 Graduate Seminar in Spring 2024.
+A introductory seminar on the mathematics and numerics of fluids and solids.
 
-See the website at [bueler.github.io/fe-seminar/](https://bueler.github.io/fe-seminar/).
+Also known as UAF Math 692 Graduate Seminar in Spring 2025.
 
-The Python/Firedrake examples are in `py/` and the PDF slides in `slides/`.
+See the website at [bueler.github.io/fluid-solid-seminar/](https://bueler.github.io/fluid-solid-seminar/).
+
