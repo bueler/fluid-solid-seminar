@@ -2,7 +2,9 @@
 title: Math 692 Graduate Seminar
 ---
 
-This will be the website for **Math 692 Graduate Seminar** on **Fluids: Mathematics and Numerics** in Spring 2025!  Here I revised the title so elastic solids are in scope too.
+This will be the website for **Math 692 Graduate Seminar** on **Fluids and Solids: Mathematics and Numerics** in Spring 2025!
+
+Here I revised the title so that elastic solids are in scope too.  The course schedule will say "Fluids: Mathematics and Numerics", but I am too lazy to make the change official.
 
 We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at the [University of Alaska Fairbanks](http://www.uaf.edu/).
 
