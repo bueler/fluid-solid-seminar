@@ -36,6 +36,6 @@ Tsunamis, linear elasticity, seismology, vulcanology, glaciers, magneto-hydrodyn
 
 ## <a id="schedule"></a> topics (schedule)
 
-| Date   | Topic | Slides | Code in repo |
-|--------|-------|--------|--------------|
-| 16 Jan | something | [FIXME](slides/16jan.pdf) | maybe
+| Date   | Speaker | Topic | Slides | Code in repo |
+|--------|-------  |-------|--------|--------------|
+| 16 Jan | someone | something | [maybe](slides/16jan.pdf) | maybe
