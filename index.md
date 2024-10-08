@@ -10,9 +10,9 @@ We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at 
 
 * Course details:
   * Organizer/Instructor: [Ed Bueler](http://bueler.github.io/), [elbueler@alaska.edu](mailto:elbueler@alaska.edu).
-  * Time and place: _probably_ Thursdays 3:30-4:30pm, Chapman XXX (to be determined).
+  * Time and place: Thursdays 3:40-4:40pm, Chapman 206.
   * In-person is preferred if you are on campus!  I will set up Zoom only if it makes sense.
-  * Credits (CRN YYYYY): 1.0, but **non-credit attendance is welcomed/encouraged**.
+  * Credits (CRN 35130): 1.0, but **non-credit attendance is welcomed/encouraged**.
 
 * The Github repo for this website is at [github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).
 
