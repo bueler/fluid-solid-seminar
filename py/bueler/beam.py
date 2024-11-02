@@ -30,6 +30,8 @@ class Beam2DProblem(object):
         return [(eps, "eps", r"$\varepsilon$")]
 
     def energy(self, u, params):
+        FIXME APPARENT REFERENCE IS BONET & WOOD BOOK?
+        
         B   = Constant((0, -1000)) # Body force per unit volume
 
         # Kinematics
