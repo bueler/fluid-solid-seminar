@@ -2,9 +2,9 @@
 title: Math 692 Graduate Seminar
 ---
 
-This will be the website for **Math 692 Graduate Seminar** on **Fluids and Solids: Mathematics and Numerics** in Spring 2025!
+This is the website for **Math 692 Graduate Seminar** on **Fluids and Solids: Mathematics and Numerics** in Spring 2025!
   
-The official course schedule will say "Fluids: Mathematics and Numerics".  Here I revised the title so that elastic solids are in scope.  (I am too lazy to make the change official.)
+The official course schedule says "Fluids: Mathematics and Numerics".  Here I revised the title so that elastic solids are in scope.  (I am too lazy to make the change official.)
 
 We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at the [University of Alaska Fairbanks](http://www.uaf.edu/).
 
@@ -12,7 +12,7 @@ We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at 
   * Organizer/Instructor: [Ed Bueler](http://bueler.github.io/), [elbueler@alaska.edu](mailto:elbueler@alaska.edu).
   * Time and place: Thursdays 3:40-4:40pm, Chapman 206.
   * In-person is preferred if you are on campus!  I will set up Zoom only if it makes sense.
-  * Credits (CRN 35130): 1.0, but **non-credit attendance is welcomed/encouraged**.
+  * Credits (CRN 35130): 1.0, but **non-credit attendance is welcomed and encouraged**.
 
 * The Github repo for this website is at [github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).
 
@@ -37,5 +37,5 @@ Tsunamis, linear elasticity, seismology, vulcanology, glaciers, magneto-hydrodyn
 ## <a id="schedule"></a> topics (schedule)
 
 | Date   | Speaker | Topic | Slides | Code in repo |
-|--------|-------  |-------|--------|--------------|
-| 16 Jan | someone | something | [maybe](slides/16jan.pdf) | maybe
+|--------|---------|-------|--------|--------------|
+| 16 Jan | someone | something | slides link | maybe |
