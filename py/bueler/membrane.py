@@ -1,3 +1,8 @@
+# MEMBRANE  Solve a linear elastic membrane problem
+# with 2 sides of the square fixed.  This is just
+# Poisson's equation, but phrased as minimizing a
+# quadratic objective.
+
 from firedrake import *
 from firedrake.output import VTKFile
 
