@@ -72,6 +72,8 @@ if plotresult:
     plt.show()
 
 if saveresult:
+    Z = TensorFunctionSpace(mesh, "Lagrange", 1)
+    epsh = Function(Z, name='eps(x,y) = eps(u)_h strain').interpolate(eps(uh))
     outname = 'result.pvd'
-    print(f'writing displacement u(x,y) to {outname} ...')
-    VTKFile(outname).write(uh)
+    print(f'writing displacement u(x,y), strain eps(x,y) to {outname} ...')
+    VTKFile(outname).write(uh,epsh)
