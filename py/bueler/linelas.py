@@ -62,8 +62,9 @@ sp = {"snes_type" : "newtonls",
 solve(F == 0, uh, bcs=bc, solver_parameters=sp)
 
 if plotresult:
-    print(f'plotting displaced mesh ... close figure to continue')
-    u_coord = Function(V).interpolate(SpatialCoordinate(mesh) + uh)
+    print(f'plotting deformed mesh ... close figure to continue')
+    phi = SpatialCoordinate(mesh) + uh   # phi is deformation; phi = I + u
+    u_coord = Function(V).interpolate(phi)
     u_mesh = Mesh(u_coord)
     plt.rcParams['figure.figsize'] = (11, 4)
     fig, axes = plt.subplots()
