@@ -15,7 +15,7 @@ f = Constant(-1.0)              # load is constant
 # build weak form by symbolically differentiating
 # the objective function, the energy J(u)
 v = TestFunction(X)
-J = 0.5 * dot(grad(u), grad(u)) * dx - dot(f, u) * dx
+J = 0.5 * dot(grad(u), grad(u)) * dx - f * u * dx
 F = derivative(J, u, v)
 # thus:  F = ( dot(grad(u),grad(v)) - f * v ) * dx
 
