@@ -4,5 +4,5 @@ all:
 
 clean:
 	@rm -f *.pyc *.pvd *.pvtu *.vtu
-	@rm -rf .pytest_cache/
+	@rm -rf .pytest_cache/ result/
 
