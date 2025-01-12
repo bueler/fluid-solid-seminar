@@ -1,22 +1,18 @@
 ---
-title: Math 692 Graduate Seminar
+title: Math 692 Graduate Seminar on Fluids and Solids
 ---
 
-This is the website for **Math 692 Graduate Seminar** on **Fluids and Solids: Mathematics and Numerics** in Spring 2025!
-  
-The official course schedule says "Fluids: Mathematics and Numerics".  Here I revised the title so that elastic solids are in scope.  (I am too lazy to make the change official.)
+This is the website for **Math 692 Graduate Seminar** on **Fluids and Solids: Mathematics and Numerics** in Spring 2025!  We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at the [University of Alaska Fairbanks](http://www.uaf.edu/).
 
-We are in the [Dept. of Mathematics and Statistics](http://www.uaf.edu/dms/) at the [University of Alaska Fairbanks](http://www.uaf.edu/).
+The official course schedule says "Fluids: Mathematics and Numerics", but I changed the title so elastic solids are in scope.  (I am too lazy to make the change official.)
 
-* Course details:
+Course details:
   * Organizer/Instructor: [Ed Bueler](http://bueler.github.io/), [elbueler@alaska.edu](mailto:elbueler@alaska.edu).
   * Time and place: Thursdays 3:40-4:40pm, Chapman 206.
   * In-person is preferred if you are on campus!  I will set up Zoom only if it makes sense.
   * Credits (CRN 35130): 1.0, but **non-credit attendance is welcomed and encouraged**.
 
-* The Github repo for this website is at [github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).
-
-* [A schedule of topics will appear at the bottom.](#schedule)  This schedule is subject to change!
+[A schedule of topics appears at the bottom.](#schedule)  This schedule is subject to change!
 
 ## guiding principles
 
@@ -53,3 +49,7 @@ Tsunamis, linear elasticity, seismology, vulcanology, glaciers, magneto-hydrodyn
 | 10 Apr |       |  |  |  |
 | 17 Apr |       |  |  |  |
 | 24 Apr |       |  |  |  |
+
+### Github repo with codes and slides
+
+The Github repo is [github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).  It contains this Jekyll website, and a `slides/` folder, and codes in `py/` etc. folders.
