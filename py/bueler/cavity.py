@@ -21,7 +21,7 @@ F = (
     1.0 / Re * inner(grad(u), grad(v)) * dx
     + inner(dot(grad(u), u), v) * dx
     - p * div(v) * dx
-    + div(u) * q * dx
+    - div(u) * q * dx
 )
 
 sparams = {
