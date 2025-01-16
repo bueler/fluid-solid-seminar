@@ -32,23 +32,23 @@ Tsunamis, linear elasticity, seismology, vulcanology, glaciers, magneto-hydrodyn
 
 ## <a id="schedule"></a> topics (schedule)
 
-| Date   | Speaker        | Topic | Slides | Code |
-|--------|----------------|-------|--------|--------------|
-| 16 Jan | Ed Bueler      | continuum mechanics and Navier-Stokes |  |  |
-| 23 Jan | Ed Bueler      | reference coordinates and linear elasticity |  |  |
-| 30 Jan |       |  |  |  |
-|  6 Feb |       |  |  |  |
-| 13 Feb |       |  |  |  |
-| 20 Feb |       |  |  |  |
-| 27 Feb |       |  |  |  |
-|  6 Mar |       |  |  |  |
+| Date   | Speaker            | Topic                                          | Slides | Code |
+|--------|--------------------|------------------------------------------------|--------|------|
+| 16 Jan | Ed Bueler          | continuum mechanics and Navier-Stokes          |  |  |
+| 23 Jan | Ed Bueler          | reference coordinates and linear elasticity    |  |  |
+| 30 Jan |  |  |  |  |
+|  6 Feb |  |  |  |  |
+| 13 Feb |  |  |  |  |
+| 20 Feb |  |  |  |  |
+| 27 Feb | Austin Smith       | introduction to magneto-hydro-dynamics         |  |  |
+|  6 Mar |  |  |  |  |
 | 13 Mar | _Spring Break!_ |  |  |  |
-| 20 Mar |       |  |  |  |
-| 27 Mar |       |  |  |  |
-|  3 Apr |       |  |  |  |
-| 10 Apr |       |  |  |  |
-| 17 Apr |       |  |  |  |
-| 24 Apr |       |  |  |  |
+| 20 Mar |  |  |  |  |
+| 27 Mar |  |  |  |  |
+|  3 Apr |  |  |  |  |
+| 10 Apr |  |  |  |  |
+| 17 Apr |  |  |  |  |
+| 24 Apr |  |  |  |  |
 
 ### Github repo with codes and slides
 
