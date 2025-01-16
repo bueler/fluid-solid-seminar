@@ -34,8 +34,8 @@ Tsunamis, linear elasticity, seismology, vulcanology, glaciers, magneto-hydrodyn
 
 | Date   | Speaker            | Topic                                          | Slides | Code |
 |--------|--------------------|------------------------------------------------|--------|------|
-| 16 Jan | Ed Bueler          | continuum mechanics and Navier-Stokes          |  |  |
-| 23 Jan | Ed Bueler          | reference coordinates and linear elasticity    |  |  |
+| 16 Jan | Ed Bueler          | continuum mechanics, toward Navier-Stokes      |  |  |
+| 23 Jan | Ed Bueler          | NS, reference configuration, linear elasticity |  |  |
 | 30 Jan |  |  |  |  |
 |  6 Feb |  |  |  |  |
 | 13 Feb |  |  |  |  |
