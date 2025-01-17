@@ -24,11 +24,11 @@ Course details:
 
 My idea for this seminar is that there are several math graduate students already doing fluids or elasticity research.  Broader knowledge, with some kind of **focus on the mathematical structures underlying continuum problems**, and on **finite element/volume formulation of the equations**, is helpful to all of us.
 
-Also, it is now pretty easy to do numerical simulations of fluids and solids using the finite element method, especially using [Firedrake](https://www.firedrakeproject.org/index.html).  That open source Python-based library was the subject of last year's [finite element seminar](https://bueler.github.io/fe-seminar/), so we have examples to work from.
-
 I figure I might start the seminar with some kind of continuum mechanics introduction.  However, general continuum mechanics quickly gets ... boring?  In any case, there are many on campus who are expert in various specific fluids/solids problems, and **they are all invited**.  Anyone who is just curious is also invited.  Ideally the experts can start their presentations from a somewhat-common starting point, before getting to their particular models.
 
-Tsunamis, linear elasticity, seismology, vulcanology, glaciers, magneto-hydrodynamics, and water balloons are all in scope.
+Tsunamis, linear elasticity, seismology, vulcanology, glaciers, magneto-hydrodynamics, thermodynamics, and water balloons are all in scope.  So are talks about the underlying mathematics, for instance Stokes theorem, differential forms, and Sobolev spaces.
+
+Also, it is now pretty easy to do numerical simulations of fluids and solids using the finite element method, for instance using [Firedrake](https://www.firedrakeproject.org/index.html).  That open source Python-based library was the subject of last year's [finite element seminar](https://bueler.github.io/fe-seminar/), so we have examples to work from.
 
 ## <a id="schedule"></a> topics (schedule)
 
