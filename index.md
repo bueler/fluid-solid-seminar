@@ -32,24 +32,24 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 
 ## <a id="schedule"></a> topics (schedule)
 
-| Date   | Speaker            | Topic                                          | Slides | Code |
-|--------|--------------------|------------------------------------------------|--------|------|
-| 16 Jan | Ed Bueler          | continuum mechanics, toward Navier-Stokes      | [pdf](slides/bueler16jan.pdf) [recording](https://alaska.zoom.us/rec/share/UBUDwv4neSnh6j6_DgyAZf_ym1o8pLba5AFBeLxbvZONa3VuoCeXQ0nguA-u3Js1.3BkVIVgSWyBGjvN9?pwd=cZJ2KPRKJmn8sxqJwiaCOh8gWFinx9m5) |  |
-| 23 Jan | Ed Bueler          | NS, reference configuration, linear elasticity |  |  |
-| 30 Jan |  |  |  |  |
-|  6 Feb |  |  |  |  |
-| 13 Feb |  |  |  |  |
-| 20 Feb |  |  |  |  |
-| 27 Feb | Austin Smith       | introduction to magneto-hydro-dynamics         |  |  |
-|  6 Mar |  |  |  |  |
-| 13 Mar | _Spring Break!_ |  |  |  |
-| 20 Mar |  |  |  |  |
-| 27 Mar |  |  |  |  |
-|  3 Apr |  |  |  |  |
-| 10 Apr |  |  |  |  |
-| 17 Apr |  |  |  |  |
-| 24 Apr |  |  |  |  |
+| Date   | Speaker            | Topic                                          | Links        |
+|--------|--------------------|------------------------------------------------|--------------|
+| 16 Jan | Ed Bueler          | continuum mechanics, toward Navier-Stokes      | [pdf](slides/bueler16jan.pdf) [recording](https://alaska.zoom.us/rec/share/UBUDwv4neSnh6j6_DgyAZf_ym1o8pLba5AFBeLxbvZONa3VuoCeXQ0nguA-u3Js1.3BkVIVgSWyBGjvN9?pwd=cZJ2KPRKJmn8sxqJwiaCOh8gWFinx9m5) |
+| 23 Jan | Ed Bueler          | NS, reference configuration, linear elasticity |  |
+| 30 Jan |  |  |  |
+|  6 Feb |  |  |  |
+| 13 Feb |  |  |  |
+| 20 Feb |  |  |  |
+| 27 Feb | Austin Smith       | introduction to magneto-hydro-dynamics         |  |
+|  6 Mar |  |  |  |
+| 13 Mar | _Spring Break!_ |  |  |
+| 20 Mar |  |  |  |
+| 27 Mar |  |  |  |
+|  3 Apr |  |  |  |
+| 10 Apr |  |  |  |
+| 17 Apr |  |  |  |
+| 24 Apr |  |  |  |
 
-### Github repo with codes and slides
+### Github repo with this website, codes, and PDF slides
 
-The Github repo is [github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).  It contains this Jekyll website, and a `slides/` folder, and codes in `py/` etc. folders.
+The Github repo is [github.com/bueler/fluid-solid-seminar](https://github.com/bueler/fluid-solid-seminar).  It contains this Jekyll website, and a `slides/` folder, and codes in `py/` etc folders.
