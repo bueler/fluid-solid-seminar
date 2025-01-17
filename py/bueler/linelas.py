@@ -35,7 +35,7 @@ lambda_ = Constant(2.5)     # same
 # function space and functions for F==0 problem
 V = VectorFunctionSpace(mesh, "Lagrange", 1)
 v = TestFunction(V)
-uh = Function(V, name='u_h(x,y) displacement')
+uh = Function(V, name='u(x,y) displacement')
 
 def eps(u):
     return 0.5 * (grad(u) + grad(u).T)
@@ -74,7 +74,10 @@ if plotresult:
 
 if saveresult:
     Z = TensorFunctionSpace(mesh, "Lagrange", 1)
-    epsh = Function(Z, name='eps(x,y) = eps(u)_h strain').interpolate(eps(uh))
+    epsh = Function(Z, name='eps(x,y) strain tensor')
+    epsh.interpolate(eps(uh))
+    sigmah = Function(Z, name='sigma(x,y) stress tensor')
+    sigmah.interpolate(lambda_ * div(u) * FIXME + 2 * mu_ * eps(u))
     outname = 'result.pvd'
     print(f'writing displacement u(x,y), strain eps(x,y) to {outname} ...')
     VTKFile(outname).write(uh,epsh)
