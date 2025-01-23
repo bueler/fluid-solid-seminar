@@ -1,17 +1,19 @@
-# We solve the time-dependent Navier-Stokes equations, using backward
+# Solve the time-dependent Navier-Stokes equations, using backward
 # Euler time stepping, in a lid-driven cavity with a stress-free base.
-# The implicit step equations are solved using Taylor-Hood elements
-# and a monolithic MUMPS direct solution for each Newton step.
+# Velocity and pressure are approximated using Taylor-Hood (P_2 x P_1)
+# elements. The implicit step equations are solved by Newton's method
+# using a monolithic MUMPS direct solution for each Newton step.
 # Compare the steady-state Navier-Stokes solver in steadycavity.py.
 
-from firedrake import *
+# settings for classroom demonstration; this run takes a couple of
+# minutes; change to m=32 and N=50 for quicker run, for example
+m = 64                    # resolution; m x m mesh
+N = 200                   # number of time steps
+dt = 0.1                  # time step
+Re = 1000.0               # Reynolds number; Re -> 0 is very viscous
+outname = 'result.pvd'    # open this with Paraview
 
-# settings
-m = 32
-N = 10
-dt = 0.1
-Re = 100.0
-outname = 'result.pvd'
+from firedrake import *
 
 # mesh and function spaces
 mesh = UnitSquareMesh(m, m)
@@ -35,6 +37,7 @@ F = (
 
 # Dirichlet conditions: moving top, no-slip sides
 # Neumann conditions:   no stress bottom
+# note there is no null space; the Jacobian is invertible
 bcs = [
     DirichletBC(Z.sub(0), Constant((1.0, 0.0)), (4,)),  # top
     DirichletBC(Z.sub(0), Constant((0.0, 0.0)), (1, 2)),  # sides
@@ -70,3 +73,4 @@ for j in range(N):
     uold.interpolate(u)
 print(f't = {t:.3f}:')
 outfile.write(u, p, time=t)
+print(f'  ... done writing to {outname}')
