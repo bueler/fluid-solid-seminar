@@ -50,9 +50,9 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 | 17 Apr |  |  |  |
 | 24 Apr |  |  |  |
 
-<!-->
+<!--
 30 Jan | Ed Bueler | reference configuration, linear elasticity |
-</-->
+-->
 
 ### Github repo with this website, codes, and PDF slides
 
