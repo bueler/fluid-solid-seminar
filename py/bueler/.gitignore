@@ -2,6 +2,7 @@
 /*.pvd
 /*.vtu
 /*.pvtu
+/*.pvsm
 /*.msh
 /result*
 /output*
