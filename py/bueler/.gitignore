@@ -2,5 +2,6 @@
 /*.pvd
 /*.vtu
 /*.pvtu
+/*.msh
 /result*
 /output*
