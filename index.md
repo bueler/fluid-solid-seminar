@@ -36,13 +36,13 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 |--------|--------------------|------------------------------------------------|--------------|
 | 16 Jan | Ed Bueler          | continuum mechanics, toward Navier-Stokes      | [slides](slides/bueler16jan.pdf) <br> [recording](https://alaska.zoom.us/rec/share/UBUDwv4neSnh6j6_DgyAZf_ym1o8pLba5AFBeLxbvZONa3VuoCeXQ0nguA-u3Js1.3BkVIVgSWyBGjvN9?pwd=cZJ2KPRKJmn8sxqJwiaCOh8gWFinx9m5) |
 | 23 Jan | Ed Bueler          | Navier-Stokes for incompressible, viscous fluids | [slides](slides/bueler23jan.pdf) <br>[recording](https://alaska.zoom.us/rec/share/1Lx_GvcoeddAthqP_uRJnU1yLzFjYKUT5tukvHSc7PPIh8khrNhnqrZQ8-J7kI3z.OY75--IaccrJpUHb?pwd=6_kCPJzT4hKuzsrIAllNPVwJ2c4G1p5Q) <br> [code](py/bueler/cavity.py) |
-| 30 Jan | Nick Harrison | irrotational and potential flows | [recording](https://alaska.zoom.us/rec/share/DkJg5URpezBJu5wk-BvhERRsoySJQ1NIduQBHBdTiAHpRWecBwbSuuQV7Eww-kc5.e2i8PL_9KHi6Q1kR?pwd=FBlRZUo9HIFLt_3TH-IUH8S9LTlbmjQz) |
+| 30 Jan | Nick Harrison      | irrotational and potential flows | [recording](https://alaska.zoom.us/rec/share/DkJg5URpezBJu5wk-BvhERRsoySJQ1NIduQBHBdTiAHpRWecBwbSuuQV7Eww-kc5.e2i8PL_9KHi6Q1kR?pwd=FBlRZUo9HIFLt_3TH-IUH8S9LTlbmjQz) |
 |  6 Feb |  |  |  |
 | 13 Feb |  |  |  |
-| 20 Feb |  |  |  |
+| 20 Feb | Amy Jenson         | TBD |  |
 | 27 Feb | Austin Smith       | introduction to magneto-hydro-dynamics         |  |
 |  6 Mar |  |  |  |
-| 13 Mar | _Spring Break!_ |  |  |
+| 13 Mar | _Spring Break!_    |  |  |
 | 20 Mar |  |  |  |
 | 27 Mar |  |  |  |
 |  3 Apr |  |  |  |
