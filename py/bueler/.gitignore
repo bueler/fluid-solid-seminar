@@ -4,5 +4,6 @@
 /*.pvtu
 /*.pvsm
 /*.msh
+/__pycache__
 /result*
 /output*
