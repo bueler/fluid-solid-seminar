@@ -12,6 +12,18 @@ def NSFunctions(mesh, k=1):
     up = Function(Z)
     return Z, V, W, up
 
+def NSSteadyWeakForm(Z, up, Re=1000.0):
+    '''return weak form for steady-state of Navier-Stokes'''
+    u, p = split(up)
+    v, q = TestFunctions(Z)
+    F = (
+        (1.0 / Re) * inner(grad(u), grad(v)) * dx
+        + inner(dot(grad(u), u), v) * dx
+        - p * div(v) * dx
+        - div(u) * q * dx
+    )
+    return F
+
 def NSTimeStepWeakForm(Z, up, uold, dt=0.1, Re=1000.0):
     '''return weak form for one backward Euler step of Navier-Stokes'''
     u, p = split(up)
