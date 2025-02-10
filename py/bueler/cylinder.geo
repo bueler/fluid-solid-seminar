@@ -1,20 +1,30 @@
-// define geometry of a cylinder (disc) of radius a=1 in a
-// rectangular box
-// generate cylinder.msh using Gmsh (https://gmsh.info/):
+// Define geometry of a cylinder (disc) in a rectangular box.
+// Step 1.  Generate readable file cylinder.msh using Gmsh (https://gmsh.info/).
 //   $ gmsh -2 cylinder.geo
-// now do Navier-Stokes simulation using cylinder.msh:
+// Step 2.  Run Navier-Stokes simulation; note cylinder.py reads cylinder.msh.
 //   $ [activate Firedrake venv]
 //   $ python3 cylinder.py
 
-Point(1) = {-6,  6, 0, 0.5};
-Point(2) = {-6, -6, 0, 0.5};
-Point(3) = { 12, -6, 0, 0.5};
-Point(4) = { 12,  6, 0, 0.5};
-Point(5) = { 0,  0, 0, 0.1};
-Point(6) = { 1,  0, 0, 0.1};
-Point(7) = {-1,  0, 0, 0.1};
-Point(8) = { 0,  1, 0, 0.1};
-Point(9) = { 0, -1, 0, 0.1};
+// box dimensions & target h
+ly = 3.0;
+minx = -3.0;
+maxx = 12.0;
+hbox = 0.5;
+
+// cylinder dimensions & target h
+rcyl = 1.0;
+hcyl = 0.1;
+
+// create geometry
+Point(1) = {minx,  ly, 0, hbox};
+Point(2) = {minx, -ly, 0, hbox};
+Point(3) = {maxx, -ly, 0, hbox};
+Point(4) = {maxx,  ly, 0, hbox};
+Point(5) = { 0,  0, 0, hcyl};
+Point(6) = { 1,  0, 0, hcyl};
+Point(7) = {-1,  0, 0, hcyl};
+Point(8) = { 0,  1, 0, hcyl};
+Point(9) = { 0, -1, 0, hcyl};
 Line(1) = {1, 4};
 Line(2) = {4, 3};
 Line(3) = {3, 2};

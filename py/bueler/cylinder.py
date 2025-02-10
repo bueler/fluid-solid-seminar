@@ -10,12 +10,13 @@
 
 # settings for classroom demonstration; this run takes a couple of
 # minutes
-N = 800                   # number of time steps; shorten for reasonable time
-dt = 0.1                  # time step
+N = 150                   # number of time steps; shorten for reasonable time
+dt = 0.5                  # time step
 H0 = 1.0                  # far field flow speed
-Re = 1000.0               # Reynolds number; Re -> 0 is very viscous
+Re = 200.0                # Reynolds number; Re -> 0 is very viscous
 gmshname = 'cylinder.msh' # read from this
-outname = 'result.pvd'    # writes here; open this with Paraview
+outname = 'result_cylinder.pvd'  # writes here; open this with Paraview
+                                 # using cylinder.pvsm
 
 from firedrake import *
 from navierstokes import *
