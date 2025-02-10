@@ -4,13 +4,13 @@
 # elements. The implicit step equations are solved by Newton's method
 # using a monolithic MUMPS direct solution for each Newton step.
 
-# settings for classroom demonstration; this run takes a couple of
-# minutes; change to m=32 and N=50 for quicker run, for example
-m = 64                    # resolution; m x m mesh
-N = 200                   # number of time steps
-dt = 0.1                  # time step
+# settings for classroom demonstration
+m = 32                    # resolution; m x m mesh
+N = 100                   # number of time steps
+dt = 0.4                  # time step
 Re = 1000.0               # Reynolds number; Re -> 0 is very viscous
-outname = 'result.pvd'    # writes here; open this with Paraview
+outname = 'result_cavity.pvd'  # writes here; open this with Paraview
+                               # using cavity.pvsm
 
 from firedrake import *
 from navierstokes import *
@@ -27,8 +27,9 @@ sparams = NSSolverParameters()
 # Dirichlet conditions: moving top, no-slip sides
 # Neumann conditions:   no stress bottom
 # note there is no null space; the Jacobian is invertible
+x, y = SpatialCoordinate(mesh)
 bcs = [
-    DirichletBC(Z.sub(0), Constant((1.0, 0.0)), (4,)),  # top
+    DirichletBC(Z.sub(0), as_vector([4 * x * (1-x), 0.0]), (4,)),  # top
     DirichletBC(Z.sub(0), Constant((0.0, 0.0)), (1, 2)),  # sides
 ]
 

@@ -2,7 +2,6 @@
 /*.pvd
 /*.vtu
 /*.pvtu
-/*.pvsm
 /*.msh
 /__pycache__
 /result*
