@@ -20,6 +20,8 @@ parser.add_argument('-opvd', metavar='FILE', type=str, default='result_cylinder.
                     help='output file name for Paraview format (.pvd)')
 parser.add_argument('-Re', type=float, default=200.0, metavar='X',
                     help='Reynolds number [default 200.0]')
+parser.add_argument('-vorticity', action='store_true', default=False,
+                    help='write vorticity into output file')
 args, passthroughoptions = parser.parse_known_args()
 
 assert args.dt > 0.0, 'positive time step required'
@@ -51,6 +53,14 @@ bcs = [
     DirichletBC(Z.sub(0), Constant((0.0, 0.0)), (14,)),  # circle
 ]
 
+def nswrite(u, p, t):
+    if args.vorticity:
+        omega = Function(p.function_space(), name='omega (vorticity)')
+        omega.interpolate(curl(u))
+        outfile.write(u, p, omega, time=t)
+    else:
+        outfile.write(u, p, time=t)
+
 # main time-stepping loop
 print(f'running {args.N} time steps of length {args.dt} to tf={args.N * args.dt},')
 print(f'  saving velocity and pressure at each step to {args.opvd} ...')
@@ -62,10 +72,10 @@ u.rename("u (velocity)")
 p.rename("p (pressure)")
 for j in range(args.N):
     print(f't = {t:.3f}:')
-    outfile.write(u, p, time=t)
+    nswrite(u, p, t)
     solve(F == 0, up, bcs=bcs, nullspace=None, solver_parameters=sparams, options_prefix="")
     t += args.dt
     uold.interpolate(u)
 print(f't = {t:.3f}:')
-outfile.write(u, p, time=t)
+nswrite(u, p, t)
 print(f'  ... done writing to {args.opvd}')
