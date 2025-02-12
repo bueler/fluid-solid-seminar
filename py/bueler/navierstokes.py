@@ -18,7 +18,7 @@ def NSSteadyWeakForm(Z, up, Re=1000.0):
     v, q = TestFunctions(Z)
     F = (
         (1.0 / Re) * inner(grad(u), grad(v)) * dx
-        + inner(dot(grad(u), u), v) * dx
+        + dot(grad(u) * u, v) * dx
         - p * div(v) * dx
         - div(u) * q * dx
     )
@@ -29,11 +29,10 @@ def NSTimeStepWeakForm(Z, up, uold, dt=0.1, Re=1000.0):
     u, p = split(up)
     v, q = TestFunctions(Z)
     F = (
-        dot(u, v) * dx
+        dot(u - uold, v) * dx
         + dt * (1.0 / Re) * inner(grad(u), grad(v)) * dx
-        + dt * inner(dot(grad(u), u), v) * dx
+        + dt * dot(grad(u) * u, v) * dx
         - dt * p * div(v) * dx
-        - dot(uold, v) * dx
         - div(u) * q * dx
     )
     return F

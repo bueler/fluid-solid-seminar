@@ -27,6 +27,7 @@ sparams = NSSolverParameters()
 # Dirichlet conditions: moving top, no-slip sides
 # Neumann conditions:   no stress bottom
 # note there is no null space; the Jacobian is invertible
+# note the lid velocity goes to zero at ends to control pressure concentrations
 x, y = SpatialCoordinate(mesh)
 bcs = [
     DirichletBC(Z.sub(0), as_vector([4 * x * (1-x), 0.0]), (4,)),  # top
@@ -45,7 +46,7 @@ p.rename("p (pressure)")
 for j in range(N):
     print(f't = {t:.3f}:')
     outfile.write(u, p, time=t)
-    solve(F == 0, up, bcs=bcs, nullspace=None, solver_parameters=sparams, options_prefix="")
+    solve(F == 0, up, bcs=bcs, solver_parameters=sparams, options_prefix="")
     t += dt
     uold.interpolate(u)
 print(f't = {t:.3f}:')
