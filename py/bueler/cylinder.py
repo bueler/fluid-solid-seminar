@@ -62,7 +62,7 @@ def nswrite(u, p, t):
         outfile.write(u, p, time=t)
 
 # main time-stepping loop
-print(f'running {args.N} time steps of length {args.dt} to tf={args.N * args.dt},')
+print(f'running {args.N} time steps of length {args.dt} to tf={args.N * args.dt}, using Re={args.Re}')
 print(f'  saving velocity and pressure at each step to {args.opvd} ...')
 t = 0.0
 uold.interpolate(ufar)
