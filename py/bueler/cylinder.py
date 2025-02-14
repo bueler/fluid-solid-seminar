@@ -20,6 +20,8 @@ parser.add_argument('-opvd', metavar='FILE', type=str, default='result_cylinder.
                     help='output file name for Paraview format (.pvd)')
 parser.add_argument('-Re', type=float, default=200.0, metavar='X',
                     help='Reynolds number [default 200.0]')
+parser.add_argument('-rotating', action='store_true', default=False,
+                    help='rotate the cylinder counterclockwise (Dirichlet condition on velocity)')
 parser.add_argument('-vorticity', action='store_true', default=False,
                     help='write vorticity into output file')
 args, passthroughoptions = parser.parse_known_args()
@@ -45,13 +47,20 @@ F = NSTimeStepWeakForm(Z, up, uold, dt=args.dt, Re=args.Re)
 sparams = NSSolverParameters()
 
 # Dirichlet conditions along three sides (u=ufar) and along
-# cylinder (u=0), but Neumann (no stress) on downstream end.
+# cylinder (u=0 or u=rotating), but Neumann (no stress) on downstream end.
 # (There is no null space; the Jacobian is invertible.)
 ufar = Function(V).interpolate(as_vector([args.H0, 0.0]))
-bcs = [
-    DirichletBC(Z.sub(0), ufar, (11, 13)),  # upstream and top and bottom
-    DirichletBC(Z.sub(0), Constant((0.0, 0.0)), (14,)),  # circle
-]
+if args.rotating:
+    x, y = SpatialCoordinate(mesh)
+    bcs = [
+        DirichletBC(Z.sub(0), ufar, (11, 13)),
+        DirichletBC(Z.sub(0), as_vector([-2*y, 2*x]), (14,)),
+    ]
+else:
+    bcs = [
+        DirichletBC(Z.sub(0), ufar, (11, 13)),  # upstream and top and bottom
+        DirichletBC(Z.sub(0), Constant((0.0, 0.0)), (14,)),  # circle
+    ]
 
 def nswrite(u, p, t):
     if args.vorticity:
