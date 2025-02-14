@@ -47,7 +47,7 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 | 27 Mar |  |  |  |
 |  3 Apr |  |  |  |
 | 10 Apr |  |  |  |
-| 17 Apr |  |  |  |
+| 17 Apr | Stefano Fochesatto | adaptive meshing for fluids |  |
 | 24 Apr |  |  |  |
 
 <!--
