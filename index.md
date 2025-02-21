@@ -39,7 +39,7 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 | 30 Jan | Nick Harrison      | irrotational and potential flows | [recording](https://alaska.zoom.us/rec/share/DkJg5URpezBJu5wk-BvhERRsoySJQ1NIduQBHBdTiAHpRWecBwbSuuQV7Eww-kc5.e2i8PL_9KHi6Q1kR?pwd=FBlRZUo9HIFLt_3TH-IUH8S9LTlbmjQz) |
 |  6 Feb | Martin Truffer     | constitutive relations or how to deal with stress | [recording](https://alaska.zoom.us/rec/share/5QYFXLJ6etSPOD3Zy0QZYmfMEeginWf75orMK7miHAhIeGhLDoEwiRlEhgio_ez5.wUE4X_XPkVBRpP9y?pwd=_w4qjBA2_ufI55o23vcFpAMTlmGsW-K4) <br> [video](https://www.youtube.com/watch?v=UEB39-jlmdw) |
 | 13 Feb | Ed Bueler          | Firedrake for Navier-Stokes | [slides](slides/bueler13feb.pdf) <br> [recording](https://alaska.zoom.us/rec/share/4JzHa_7LjdWHuWzICj2AgrbCWekjKeZDGSse8LfkMPppCazb9X0PEBfbt1jqoT0.8HmOqUGIOT2_Y19s?pwd=Zql8r96yMhBmdp9d-u3Xts1ZNVM8nmND) <br> [navierstokes.py](py/bueler/navierstokes.py) <br> [cavity.py](py/bueler/cavity.py) <br> [cylinder.geo](py/bueler/cylinder.geo) <br> [cylinder.py](py/bueler/cylinder.py) |
-| 20 Feb | Amy Jenson         | conservation of energy in glaciers |  |
+| 20 Feb | Amy Jenson         | conservation of energy in glaciers | [recording](https://alaska.zoom.us/rec/share/ul4JlLS9_P6Co_uTJZiuTG5IZbKVaR74wKlHyn9F1oUpSOJPWZQTGc6M7gsmEoDp.ZB8zT46AQCgTBMk8?pwd=iN0uTpEXNPRbbHi0p7uBoYDDS7-ybzW2) |
 | 27 Feb | Austin Smith       | introduction to magneto-hydro-dynamics |  |
 |  6 Mar |  |  |  |
 | 13 Mar | _Spring Break!_    |  |  |
