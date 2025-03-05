@@ -41,8 +41,8 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 | 13 Feb | Ed Bueler          | Firedrake for Navier-Stokes | [slides](slides/bueler13feb.pdf) <br> [recording](https://alaska.zoom.us/rec/share/4JzHa_7LjdWHuWzICj2AgrbCWekjKeZDGSse8LfkMPppCazb9X0PEBfbt1jqoT0.8HmOqUGIOT2_Y19s?pwd=Zql8r96yMhBmdp9d-u3Xts1ZNVM8nmND) <br> [navierstokes.py](py/bueler/navierstokes.py) <br> [cavity.py](py/bueler/cavity.py) <br> [cylinder.geo](py/bueler/cylinder.geo) <br> [cylinder.py](py/bueler/cylinder.py) |
 | 20 Feb | Amy Jenson         | conservation of energy in glaciers | [recording](https://alaska.zoom.us/rec/share/ul4JlLS9_P6Co_uTJZiuTG5IZbKVaR74wKlHyn9F1oUpSOJPWZQTGc6M7gsmEoDp.ZB8zT46AQCgTBMk8?pwd=iN0uTpEXNPRbbHi0p7uBoYDDS7-ybzW2) |
 | 27 Feb | Austin Smith       | introduction to magneto-hydro-dynamics | [recording](https://alaska.zoom.us/rec/share/d0vXlwjnTC5BKgfZVkme2qk8h-Jw5FB4RXnU59a4nwS6onpkMUIkJY5jLahq51gS.L02EJ6kAxt0EJA_x?pwd=MzugvNa3rvGRbU9Z4miNNkRzQfQ3PmMS) <br> [slides (pdf)](slides/smith27feb.pdf) <br> [slides](https://docs.google.com/presentation/d/1lm8MZSuECJ0qPO9AEXQNnYuVicjuG6iDp4oQ9viHRa0) |
-|  6 Mar |  | _no talk_ |  |
-| 13 Mar | _Spring Break!_    |  |  |
+|  6 Mar | _no talk_ | _no talk_ |  |
+| 13 Mar | _Spring Break!_ | _Spring Break!_ |  |
 | 20 Mar |  |  |  |
 | 27 Mar |  |  |  |
 |  3 Apr |  |  |  |
