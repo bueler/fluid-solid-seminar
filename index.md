@@ -43,7 +43,7 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 | 27 Feb | Austin Smith       | introduction to magneto-hydro-dynamics | [recording](https://alaska.zoom.us/rec/share/d0vXlwjnTC5BKgfZVkme2qk8h-Jw5FB4RXnU59a4nwS6onpkMUIkJY5jLahq51gS.L02EJ6kAxt0EJA_x?pwd=MzugvNa3rvGRbU9Z4miNNkRzQfQ3PmMS) <br> [slides (pdf)](slides/smith27feb.pdf) <br> [slides](https://docs.google.com/presentation/d/1lm8MZSuECJ0qPO9AEXQNnYuVicjuG6iDp4oQ9viHRa0) |
 |  6 Mar | _no talk_ | _no talk_ |  |
 | 13 Mar | _Spring Break!_ | _Spring Break!_ |  |
-| 20 Mar |  |  |  |
+| 20 Mar | Ed Bueler | deformation, displacement, strain, stress, and all that |  |
 | 27 Mar |  |  |  |
 |  3 Apr |  |  |  |
 | 10 Apr |  |  |  |
