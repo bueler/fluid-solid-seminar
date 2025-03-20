@@ -45,7 +45,7 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 | 13 Mar |  | _Spring Break!_ |  |
 | 20 Mar | Ed Bueler | deformation, displacement, strain, stress, and all that |  |
 | 27 Mar | Sasha Bobrovnikov | something tsunamis |  |
-|  3 Apr |  |  |  |
+|  3 Apr | Emmanuel Azorko | something elasticity |  |
 | 10 Apr |  |  |  |
 | 17 Apr | Stefano Fochesatto | adaptive meshing for fluids |  |
 | 24 Apr |  |  |  |
