@@ -43,7 +43,7 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 | 27 Feb | Austin Smith       | introduction to magneto-hydro-dynamics | [recording](https://alaska.zoom.us/rec/share/d0vXlwjnTC5BKgfZVkme2qk8h-Jw5FB4RXnU59a4nwS6onpkMUIkJY5jLahq51gS.L02EJ6kAxt0EJA_x?pwd=MzugvNa3rvGRbU9Z4miNNkRzQfQ3PmMS) <br> [slides (pdf)](slides/smith27feb.pdf) <br> [slides](https://docs.google.com/presentation/d/1lm8MZSuECJ0qPO9AEXQNnYuVicjuG6iDp4oQ9viHRa0) |
 |  6 Mar |  | _no talk_ |  |
 | 13 Mar |  | _Spring Break!_ |  |
-| 20 Mar | Ed Bueler | deformation, displacement, strain, stress, and all that |  |
+| 20 Mar | Ed Bueler | deformation, displacement, strain, stress, and all that | [slides](slides/bueler20mar.pdf) <br> [recording](https://alaska.zoom.us/rec/share/d_m9JRgxysIuVyaqqZKWSQluazms0PPV8j9up8prEyf33RotJoIv2PyPfGENSlKg.A9JFp0_lbWempNGv?pwd=kcshTn7E5PAkN80IPU48kI33AGKnbSch) <br> [deform.py](py/bueler/deform.py) <br> [deform.pvsm](py/bueler/deform.pvsm) <br> [linelas.py](py/bueler/linelas.py) |
 | 27 Mar | Sasha Bobrovnikov | something tsunamis |  |
 |  3 Apr | Emmanuel Azorko | something elasticity |  |
 | 10 Apr | Jacob Crim | TBD |  |
