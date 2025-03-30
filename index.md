@@ -45,7 +45,7 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 | 13 Mar |  | _Spring Break!_ |  |
 | 20 Mar | Ed Bueler | deformation, displacement, strain, and all that | [slides](slides/bueler20mar.pdf) <br> [recording](https://alaska.zoom.us/rec/share/d_m9JRgxysIuVyaqqZKWSQluazms0PPV8j9up8prEyf33RotJoIv2PyPfGENSlKg.A9JFp0_lbWempNGv?pwd=kcshTn7E5PAkN80IPU48kI33AGKnbSch) <br> [deform.py](py/bueler/deform.py) <br> [deform.pvsm](py/bueler/deform.pvsm) <br> [linelas.py](py/bueler/linelas.py) |
 | 27 Mar | Sasha Bobrovnikov | inverse problems for tsunami waves | [recording](https://alaska.zoom.us/rec/share/cUb6Mf1fJEsAW5YeWp8jdbq7zfcQTJt3u2pksb3zfXWYwTTRXgYEUFdU96K9Qqkt.GyUIqZlu2nIn2khN?pwd=CCie6i_fNfbe864Oo5vWddTpEpVAU1ue) |
-|  3 Apr | Emmanuel Azorko | something elasticity |  |
+|  3 Apr | Emmanuel Azorko | equilibrium equations in linear elasticity |  |
 | 10 Apr | Jacob Crim | TBD |  |
 | 17 Apr | Stefano Fochesatto | adaptive meshing for fluids |  |
 | 24 Apr |  |  |  |
