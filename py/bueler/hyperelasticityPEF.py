@@ -26,7 +26,7 @@ for i in range(1, 4):
 
 geo = OCCGeometry(shape, dim=2)
 ngmesh = geo.GenerateMesh(maxh=1)
-base = Mesh(ngmesh)
+base = Mesh(ngmesh)  # make it a Firedrake mesh
 VTKFile("output/basemesh.pvd").write(base)
 
 # refine uniformly twice
