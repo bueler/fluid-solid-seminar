@@ -4,6 +4,10 @@
 #   https://github.com/pefarrell/icerm2024/blob/main/slides.pdf
 # and specifically:
 #   https://github.com/pefarrell/icerm2024/blob/main/06_hyperelasticity/01_hyperelasticity.py
+# possibly useful reference for compresssible neo-Hookean hyperelasticity
+# is section 5.4.3 of
+#   J. Bonet & R. D. Wood (1997).  Nonlinear Continuum Mechanics for
+#   Finite Element Analysis, Cambridge University Press.
 
 from firedrake import *
 from firedrake.output import VTKFile
@@ -41,7 +45,7 @@ top    = [i + 1 for (i, name) in
          enumerate(ngmesh.GetRegionNames(codim=1)) if name == "top"]
 
 V = VectorFunctionSpace(mesh, "CG", 2)
-u = Function(V, name="Displacement")
+u = Function(V, name="displacement")
 
 # Kinematics
 d = mesh.geometric_dimension()
@@ -88,14 +92,21 @@ sp = {"snes_converged_reason": None,
       "snes_monitor": None,
       "snes_linesearch_type": "l2"}  # types "l2", "cp" work; "basic", "bt" do not
 
+# set-up to write the stress into the file
+Ten = TensorFunctionSpace(mesh, 'CG', 1)
+b = F * F.T  # left Cauchy-Green strain tensor
+sigma = (mu * (b - I) + lmbda * ln(J) * I) / J   # Cauchy stress tensor
+sig = Function(Ten, name='stress').interpolate(sigma)
+
 # each "time" is really a new solve, but with initial Newton iterate
 # coming from previous solve; this is called "continuation"
 outname = "output/hyperelasticity.pvd"
 pvd = VTKFile(outname)
-pvd.write(u, time=0)
+pvd.write(u, sig, time=0)
 for strain_ in np.linspace(0, -0.1, 41)[1:]:
     print(f"Solving for strain {strain_:.4f}")
     strain.assign(strain_)
     solve(R == 0, u, bcs, solver_parameters=sp)
-    pvd.write(u, time=-strain_)
+    sig.interpolate(sigma)
+    pvd.write(u, sig, time=-strain_)
 print(f'... results saved in {outname}')
