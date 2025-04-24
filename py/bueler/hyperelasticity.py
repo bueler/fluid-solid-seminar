@@ -29,14 +29,12 @@ ngmesh = geo.GenerateMesh(maxh=1)
 base = Mesh(ngmesh)  # make it a Firedrake mesh
 VTKFile("output/basemesh.pvd").write(base)
 
-# refine uniformly twice
-# *but*, since it is a netgen mesh, the boundary gets more circular
-# ... fails in parallel
+# refine uniformly twice; since it is a netgen mesh, the boundary
+# gets more circular; but since it is a netgen mesh this fails in parallel
 mh = MeshHierarchy(base, 2, netgen_flags={})
 mesh = mh[-1]   # the finest mesh from the list mh
 
-# to apply boundary conditions we extract labels (suitable for
-# Firedrake) from OCC 
+# to apply boundary conditions we extract Firedrake labels from OCC
 bottom = [i + 1 for (i, name) in
          enumerate(ngmesh.GetRegionNames(codim=1)) if name == "bottom"]
 top    = [i + 1 for (i, name) in
@@ -51,7 +49,7 @@ I = Identity(d)  # Identity tensor
 F = I + grad(u)  # Deformation gradient
 C = F.T*F        # Right Cauchy-Green tensor
 
-# Invariants of deformation tensors
+# scalar Invariants of deformation tensors
 Ic = tr(C)
 J  = det(F)
 
@@ -64,13 +62,16 @@ print(f"λ: {float(lmbda)}")
 # Stored strain energy density (compressible neo-Hookean model)
 psi = (mu/2)*(Ic - d) - mu*ln(J) + (lmbda/2)*(ln(J))**2
 
-# Total potential energy
-E = psi*dx
+# compare *linear* hyperelasticity case (also isotropic):
+#eps = 0.5 * (grad(u) + grad(u).T)
+#psi = mu * tr(eps.T * eps) + (lmbda/2) * tr(eps)**2
 
-# Hyperelasticity equations. Quite hard to write down!
-# (Quite hard to write down *if you don't ask Firedrake
-# to get the symbolic derivative as shown here*.)
-R = derivative(E, u)
+# Total (elastic) potential energy
+Energy = psi * dx
+
+# Hyperelasticity equations (weak form). Quite hard to write down
+# if you don't ask Firedrake for the symbolic derivative!
+R = derivative(Energy, u)
 
 # Boundary conditions
 strain = Constant(0)  # placeholder; will be nonzero in loop below
@@ -81,15 +82,16 @@ bcs = [DirichletBC(V, Constant((0, 0)), bottom),
 # solver parameters for a Newton solver
 sp = {"snes_converged_reason": None,
       "snes_monitor": None,
-      "snes_linesearch_type": "l2"}  # types l2, cp work; types basic, bt do not
+      "snes_linesearch_type": "l2"}  # types "l2", "cp" work; "basic", "bt" do not
 
-# each "time" is really a new solve, but with initial
-# Newton iterate coming from previous solve, which is called
-# "continuation"
-pvd = VTKFile("output/hyperelasticity.pvd")
+# each "time" is really a new solve, but with initial Newton iterate
+# coming from previous solve; this is called "continuation"
+outname = "output/hyperelasticity.pvd"
+pvd = VTKFile(outname)
 pvd.write(u, time=0)
 for strain_ in np.linspace(0, -0.1, 41)[1:]:
     print(f"Solving for strain {strain_:.4f}")
     strain.assign(strain_)
     solve(R == 0, u, bcs, solver_parameters=sp)
     pvd.write(u, time=-strain_)
+print(f'... results saved in {outname}')
