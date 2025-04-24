@@ -48,7 +48,7 @@ Also, it is now pretty easy to do numerical simulations of fluids and solids usi
 |  3 Apr | Emmanuel Azorko | equilibrium equations in linear elasticity | [recording](https://alaska.zoom.us/rec/share/5mojTz4Gg5P-w2dbanF6pBg_SdB5hY5tDL7wtKv4ShMnoeWLdGBFWRBFMEnri-Vl.RQd_lXjJTC0geB7-?pwd=VlgnZdAY8AnJu_MmwTjmynx7hCestyHL) <br> [slides](slides/azorko3apr.pdf) |
 | 10 Apr | Jacob Crim | stresses in a spherical elastic solid | [recording](https://alaska.zoom.us/rec/share/RcFf7vH5OruF9tLzrZElNEc9KjV4zmjl1PY41asVy4XuiYC_vS6RluH4tEjc1LF_.FTTYrtFi9KbC5wp-?pwd=hZlY0LmT1sdZ2e-oqm35ZOZc94gvhe0D) <br> [source 1](https://www.brown.edu/Departments/Engineering/Courses/En1750/Notes/Elastic_Solutions/Elastic_Solutions.htm) <br> [source 2](https://peeterjoot.wordpress.com/2012/01/23/strain-tensor-in-spherical-coordinates/) <br> [source 3](slides/etc/ex04.pdf) |
 | 17 Apr | Stefano Fochesatto | adaptive meshing for fluids | [recording](https://alaska.zoom.us/rec/share/eQYUhkf27PIr-dCE4uYLP3OmUWmnwzna-b0QsdQSMExpJcQ10aKd71PNS_TO0nE1.zrZgtIJtQeE1HZJ8?pwd=2XuBhSvDjZXf6--KICT1gdnNMRdg46oa) <br> [slides](https://github.com/StefanoFochesatto/FluidAdapt/blob/main/Presentation/Presentation.pdf) <br> [codes](https://github.com/StefanoFochesatto/FluidAdapt)|
-| 24 Apr | Ed Bueler | hyperelasticity example from Patrick Farrell | [slides](https://github.com/pefarrell/icerm2024/blob/main/slides.pdf) |
+| 24 Apr | Ed Bueler | hyperelasticity example from Patrick Farrell | [slides](slides/farrell24apr.pdf) <br> [hyperelasticity.py](py/bueler/hyperelasticity.py) <br> [repo](https://github.com/pefarrell/icerm2024/) |
 
 <!--
 30 Jan | Ed Bueler | reference configuration, linear elasticity |
