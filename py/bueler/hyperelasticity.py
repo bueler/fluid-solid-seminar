@@ -61,6 +61,9 @@ print(f"λ: {float(lmbda)}")
 
 # Stored strain energy density (compressible neo-Hookean model)
 psi = (mu/2)*(Ic - d) - mu*ln(J) + (lmbda/2)*(ln(J))**2
+# formally equivalent to write in terms of invariants of C=F.T*F:
+#IIIc = det(C)
+#psi = (mu/2)*(Ic - d) - mu*(1/2)*ln(IIIc) + (lmbda/2)*((1/2)*ln(IIIc))**2
 
 # compare *linear* hyperelasticity case (also isotropic):
 #eps = 0.5 * (grad(u) + grad(u).T)
@@ -68,6 +71,7 @@ psi = (mu/2)*(Ic - d) - mu*ln(J) + (lmbda/2)*(ln(J))**2
 
 # Total (elastic) potential energy
 Energy = psi * dx
+#possibly useful to limit quadrature degree: Energy = psi * dx(degree=5)
 
 # Hyperelasticity equations (weak form). Quite hard to write down
 # if you don't ask Firedrake for the symbolic derivative!
