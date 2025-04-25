@@ -35,7 +35,7 @@ VTKFile("output/basemesh.pvd").write(base)
 
 # refine uniformly twice; since it is a netgen mesh, the boundary
 # gets more circular; but since it is a netgen mesh this fails in parallel
-mh = MeshHierarchy(base, 2, netgen_flags={})
+mh = MeshHierarchy(base, 3, netgen_flags={})
 mesh = mh[-1]   # the finest mesh from the list mh
 
 # to apply boundary conditions we extract Firedrake labels from OCC
@@ -44,7 +44,7 @@ bottom = [i + 1 for (i, name) in
 top    = [i + 1 for (i, name) in
          enumerate(ngmesh.GetRegionNames(codim=1)) if name == "top"]
 
-V = VectorFunctionSpace(mesh, "CG", 2)
+V = VectorFunctionSpace(mesh, "CG", 1)
 u = Function(V, name="displacement")
 
 # Kinematics
@@ -103,7 +103,7 @@ sig = Function(Ten, name='stress').interpolate(sigma)
 outname = "output/hyperelasticity.pvd"
 pvd = VTKFile(outname)
 pvd.write(u, sig, time=0)
-for strain_ in np.linspace(0, -0.1, 41)[1:]:
+for strain_ in np.linspace(0, -0.2, 81)[1:]:
     print(f"Solving for strain {strain_:.4f}")
     strain.assign(strain_)
     solve(R == 0, u, bcs, solver_parameters=sp)
